@@ -10,6 +10,7 @@
     display:grid;
     grid-template-rows: 3;
     grid-template-columns: repeat(1,1fr);
+    grid-template-areas: "navi" "main" "last";
 }
 
 .navi-bar{
@@ -29,9 +30,7 @@
 }
 
 .navi-bar a:hover{
-    border: 2px solid gray;
-    padding: 3px;
-    border-radius: 3px;
+    color: black;
 }
 
 .car-image{
@@ -68,6 +67,7 @@
 
 #form label{
     font-size: small;
+    margin-bottom: 3px;
 }
 
 #name{
@@ -95,6 +95,10 @@
     margin-bottom: 20px;
 }
 
+#form button:hover{
+    color: black;
+}
+
 #rem
 {
     margin-top: 10px;
@@ -105,10 +109,274 @@
     margin-left: 10px;
     font-size:x-small;
 }
+#im{
+    display: none;
+}
 #register{
     margin-left: 10px;
     font-size:x-small;
     float: right;
     margin-top: 5px;
     margin-right: 10px;
+}
+#forgot:hover{
+    color: black;
+}
+
+#register:hover{
+    color: black;
+}
+@media only screen and (max-width: 800px) and (min-width:530px){
+
+    #container{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas: "navi" "main" "last";
+    }
+    
+    .navi-bar{
+        margin-top: 20px;
+        background-color: #fffefe;
+        margin-bottom: 20px;
+    }
+    .navi-bar a{
+        margin-top: 15px;
+        float: right;
+        padding-right: 20px;
+        font-size:large;
+    }
+    .car-image{
+        background-color: #feca33; 
+        grid-area: main;
+    }
+    
+
+    #form{
+        margin-top:-41%;
+        float: left;
+        height: 280px;
+        width: 200px;
+        background-color: #fffefe;
+        margin-left: 30px;
+        box-shadow: 0 8px 16px black;
+    }
+    #main{
+        grid-area: main;
+    }
+    #im{
+        display:inline;
+        margin-top: 100px;
+        width: 60%;
+        float: right;
+        margin-right:0%;
+    }
+
+   
+
+}
+
+@media only screen and (min-width:800px) and (max-width:1056px){
+
+    #container{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas: "navi" "main" "last";
+    }
+    .navi-bar{
+        margin-top: 10px;
+        background-color: #fffefe;
+        height: 80px;
+    }
+    
+    .logo{
+        margin-top: 2%;
+        margin-left: 2%;
+        width: 20%;
+
+    }
+
+    .navi-bar a{
+        margin-top: 2.5%;
+        float: right;
+        padding-right: 25px;
+        font-size:large;
+    }
+    .car-image{
+        grid-area: main;
+    }
+    #main{
+        grid-area: main;
+        height: 500px;
+    }
+    #im{
+        display:inline;
+        margin-top: 130px;
+        width: 50%;
+        float: right;
+        margin-right: 7%;
+    }
+
+    #form{
+        float: left;
+        height: 350px;
+        margin-top:-32%;
+        width: 270px;
+        background-color: #fffefe;
+        margin-left: 7%;
+        box-shadow: 0 8px 16px black;
+    }
+
+    #form h2{
+        margin-top: 20px;
+        text-align: center;
+        margin-bottom: 40px;
+        font-size:x-large;
+    }
+    #form label{
+        font-size: medium;
+    }
+
+    #name{
+        margin-bottom: 30px;
+        margin-left: 40px;
+    }
+    #password{
+        margin-left: 40px;
+        margin-bottom: 30px;
+    }
+    
+    #form input{
+        border: none;
+        border-bottom: 1.5px solid #706c6e;
+    }
+    
+    #form button{
+        margin-left: 95px;
+        padding: 3px;
+        width: 70px;
+    }
+    
+    #rem
+    {
+        margin-top: 15px;
+        font-size:small;
+        bottom: 3px;
+    }
+    
+    #forgot{
+        font-size:small;
+    }
+    #register{
+        font-size:small;
+    }
+
+    
+}
+
+@media only screen and (min-width:1056px){
+    #container{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas: "navi" "main" "last";
+    }
+    .navi-bar{
+        margin-top: 10px;
+        background-color: #fffefe;
+        height: 80px;
+    }
+    
+    .logo{
+        margin-top: 2%;
+        margin-left: 2%;
+        width: 20%;
+
+    }
+
+    .navi-bar a{
+        margin-top: 2.5%;
+        float: right;
+        padding-right: 65px;
+        font-size:large;
+    }
+    .car-image{
+        grid-area: main;
+    }
+    #main{
+        grid-area: main;
+        height: 500px;
+    }
+    #im{
+        display:inline;
+        margin-top: 130px;
+        width: 50%;
+        float: right;
+        margin-right: 4.6%;
+    }
+
+    #form{
+        float: left;
+        height: 370px;
+        margin-top:5%;
+        width: 300px;
+        background-color: #fffefe;
+        margin-left: 6%;
+        box-shadow: 0 8px 16px black;
+    }
+
+    #form h2{
+        margin-top: 20px;
+        text-align: center;
+        margin-bottom: 30px;
+        font-size:xx-large;
+    }
+    #form label{
+        font-size: large;
+        margin-bottom: 20%;
+    }
+
+    #name{
+        margin-bottom: 2px;
+        margin-left: 30px;
+    }
+    #password{
+        margin-top: 15px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+    
+    #form input{
+        border: none;
+        border-bottom: 1.5px solid #706c6e;
+    }
+    
+    #form button{
+        margin-left: 100px;
+        padding: 8px;
+        width: 80px;
+    }
+    
+    #rem
+    {
+        margin-top: 15px;
+        font-size:small;
+        bottom: 3px;
+    }
+    
+    #forgot{
+        font-size:small;
+    }
+    #register{
+        font-size:small;
+    }
+    #nameValidation{
+        font-size: small;
+        margin-left: 30px;
+    }
+
+    #passValid{
+        font-size: small;
+        margin-left: px;
+    }
+    
+   
 }
