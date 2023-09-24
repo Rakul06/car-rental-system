@@ -13,38 +13,71 @@
             <a href="">Contact</a>
             <a href="">Register</a>
             <a href="">Vechiles</a>
-            <a href="home.html">Home</a>
-            
+            <a href="home.html">Home</a>        
         </div>
         <div class="car-image">
-            <img src="Benz.png" alt="">
-            
+            <img src="Benz.png" alt="">        
         </div>
         <div id="main">
             <img src="Benz.png" alt="" id="im">
-           <div id="form">
-            <h2>Login</h2>
-            <div id="name">
-                <label for="username">username</label>
+           <form action="home.html" name="form1">
+            <div id="form" >
+                <h2>Login</h2>
+                <div id="name">
+                    <label for="username">username</label>
+                    <br>
+                    <input type="text" name="username" >
+                </div>
+                <span id="nameValidation"style="color: red;"></span>
+                <div id="password">
+                    <label for="password">password</label>
+                    <br>
+                    <input type="password" name="password" >
+                    
+                    <p id="rem">Remember me <input type="checkbox" id="check"></p>
+                    <span id="passValid"style="color: red;"></span>                   
+                </div>
+                <button type="submit" onclick="return validate()">Login</button>
                 <br>
-                <input type="text"  name="username" required>
-            </div>
-            <span id="nameValidation"style="color: red;"></span>
-            <div id="password">
-                <label for="password">password</label>
-                <br>
-                <input type="password"  name="password" required>
-                <p id="rem">Remember me <input type="checkbox" id="check"></p>
-                <span id="passValid"style="color: red;"></span>
-                
-            </div>
-            <button>Login</button>
-            <br>
-            <a href="" id="forgot">Forgot Password?</a>
-            <a href="" id="register">Do not have a account?</a>
-           </div>
+                <a href="" id="forgot">Forgot Password?</a>
+                <a href="" id="register">Do not have a account?</a>
+               </div>
+           </form>
         </div>
 
     </div>
+
+    <script>
+        function validate(){
+            let username=document.forms["form1"]["username"].value;
+            let password=document.forms["form1"]["password"].value;
+            
+            if(username=="" && password==""){
+                let sp=document.getElementById("nameValidation");
+                sp.innerHTML="username cannot be empty";
+                let sp2=document.getElementById("passValid");
+                sp2.innerHTML="password cannot be empty";
+                return false; 
+            }
+            else if(password=="" && !username==""){
+                let pass=document.getElementById("passValid");
+                pass.innerHTML="password cannot be empty"
+                let sp=document.getElementById("nameValidation");
+                sp.innerHTML="";
+                return false;
+            }
+            else if(username=="" && !password==""){
+                let sp=document.getElementById("nameValidation");
+                sp.innerHTML="username cannot be empty";
+                let pass=document.getElementById("passValid");
+                pass.innerHTML=""
+                return false;
+            }
+            
+            else{
+                return true;
+            }
+        }
+    </script>
 </body>
 </html>
