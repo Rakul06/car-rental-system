@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #706c6e;
+    text-decoration: none;
+}
+
+.active{
+    border: 2px solid #706c6e;
+    
+    padding:6px;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+}
+
+#navi-bar{
+    padding: 10px;
+    background-color: #fffefe;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    position: fixed;        
+    width: 100%;
+    justify-content:space-between;
+    align-items: center;
+}
+
+#logo{
+    width: 20vh; 
+}
+
+.navi-link{
+    padding-right: 15px;
+    font-size:small;
+}
+
+
+#navi-bar a:hover{
+    color: black;
+}
+
+#main-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #feca33;
+}
+
+#image{
+    display: flex;
+    width: auto;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#img{
+    margin-top: 90px;
+    width: 80vw;
+}
+
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content form{
+    background-color: #fffefe;
+    width: 80vw;
+    height: auto;
+    box-shadow: 0 8px 16px black;
+    margin-bottom: 20px;
+}
+
+form h2{
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+form select{
+    height: 40px;
+    width: 80%;
+    margin-left: 10%;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#pick-up{
+    
+    margin-left: 10%;
+    background-color: #ececec;
+    height: 30px;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+#pick-up input{
+    border: none;
+    background: none;
+    height: 30px; 
+    width:70%;
+    
+    
+}
+
+#drop{
+    
+    margin-left: 10%;
+    background-color: #ececec;
+    height: 30px;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+#drop input{
+    margin-left: 2%;
+    border: none;
+    background: none;
+    height: 30px; 
+    width:70%;
+}
+.pick-up-DT{
+    padding: 5px;
+    margin-left: 10%;
+    background-color: #ececec;
+    height: 30px;
+    width: 80%;
+    margin-bottom: 10px;
+}
+.pick-up-DT input{
+    border: none;
+    background: none;
+}
+
+form h4{
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+form button{
+    padding: 15px;
+    border: none;
+    color: #fffefe;
+    background-color: #feca33;
+    font-weight: bold;
+}
+
+@media only screen and (min-width:1000px){
+    #navi-bar{      
+        height: 15vh;
+    }
+    #logo{
+        width: 40vh; 
+    }
+    .navi-link{
+        margin-left: 50px;
+        font-size:larger;
+    }
+    #img{
+        margin-top: 120px;
+        width: 60vw;
+    }
+    #content form{
+        background-color: #fffefe;
+        width: 75vw;
+        height: auto;
+        box-shadow: 0 8px 16px black;
+        margin-bottom: 20px;
+    }
+}

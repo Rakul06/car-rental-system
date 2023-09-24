@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Car-Rental-System</title>
+</head>
+<body>
+    <div id="home">
+        <div id="navi-bar">
+            <img src="logoFinal.gif" alt="" id="logo">
+            <ul>
+                <a href=""  class="navi-link , active">Home</a>
+                <a href="" class="navi-link">Contact</a>
+                <a href="" class="navi-link">FAQ</a>
+            <ul>
+        </div>
+        <div id="main-content">
+            <div id="image">
+                <img id="img"src="Benz.png" alt="">
+            </div>
+            <div id="content">
+                <form action="" name="book-car">
+                    <h2>Book your car</h2>
+                    <select name="cars" id="cars">
+                        <option value="">Select your car type</option>
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                    <div id="pick-up">
+                        <label for="pick-up">pick-up :</label>
+                        <input type="text" placeholder="Enter a city" name="pick-up">
+                    </div>
+                    <div id="drop">
+                        <label for="drop">drop :</label>
+                        <input type="text"  name="drop"placeholder="Enter a drop location">
+                    </div>
+                    <div class="pick-up-DT">
+                        <label for="pick-up-DT">pick-up :</label>
+                        <input type="date" name="pick-up-DT">
+                        <input type="time" name="pick-up-DT">
+                    </div>
+                    <div class="pick-up-DT">
+                        <label for="drop-DT">drop :</label>
+                        <input type="date" name="drop-DT">
+                        <input type="time" name="drop-DT">
+                    </div>
+                    <h4><button type="submit">CONTINUE CAR RESARVATION</button></h4>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
