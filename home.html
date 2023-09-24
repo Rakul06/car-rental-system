@@ -12,13 +12,17 @@
             <img src="logoFinal.gif" alt="" id="logo">
             <ul>
                 <a href=""  class="navi-link , active">Home</a>
+                <a href="" class="navi-link">Vechiles</a>
                 <a href="" class="navi-link">Contact</a>
-                <a href="" class="navi-link">FAQ</a>
+                <a href="index.html"class="navi-link">Login</a>
+                
             <ul>
         </div>
         <div id="main-content">
             <div id="image">
-                <img id="img"src="Benz.png" alt="">
+                <img class="image fade"src="Benz.png" alt="">
+                <img class="image fade" id="image2" src="BMW.png" alt="" >
+
             </div>
             <div id="content">
                 <form action="" name="book-car">
@@ -26,7 +30,7 @@
                     <select name="cars" id="cars">
                         <option value="">Select your car type</option>
                         <option value="volvo">Volvo</option>
-                        <option value="saab">Saab</option>
+                        <option value="saab">BMW</option>
                         <option value="mercedes">Mercedes</option>
                         <option value="audi">Audi</option>
                     </select>
@@ -48,12 +52,32 @@
                         <input type="date" name="drop-DT">
                         <input type="time" name="drop-DT">
                     </div>
-                    <h4><button type="submit">CONTINUE CAR RESARVATION</button></h4>
+                    <h4><button type="submit" id="but">CONTINUE CAR RESARVATION</button></h4>
                 </form>
             </div>
         </div>
+        <div id="footer">
+                <p id="rights">©2014 Car-Rental-System, All Rights Reserved</p>
+        </div>
         
     </div>
+    <script>
+        let index = 0;
+        displayImages();
+        function displayImages() {
+        let i;
+        const images = document.getElementsByClassName("image");
+        for (i = 0; i < images.length; i++) {
+            images[i].style.display = "none";
+        }
+        index++;
+        if (index > images.length) {
+            index = 1;
+        }
+        images[index-1].style.display = "block";
+        setTimeout(displayImages, 3000); 
+        }
+    </script>
     
 </body>
 </html>
