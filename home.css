@@ -8,7 +8,6 @@
 
 .active{
     border: 2px solid #706c6e;
-    
     padding:6px;
 }
 
@@ -34,7 +33,7 @@
 }
 
 .navi-link{
-    padding-right: 15px;
+    padding-right: 5px;
     font-size:small;
 }
 
@@ -59,10 +58,15 @@
     
 }
 
-#img{
+.image{
     margin-top: 90px;
     width: 80vw;
 }
+
+
+
+
+  
 
 #content{
     display: flex;
@@ -144,14 +148,35 @@ form h4{
     
 }
 
-form button{
+#but{
     padding: 15px;
     border: none;
     color: #fffefe;
     background-color: #feca33;
     font-weight: bold;
+    box-shadow: 3px solid gray;
 }
 
+#but:hover{
+    color: black;
+}
+
+#footer{
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    background-color: #EDECEC;
+    justify-content: center;
+    align-items:center;
+    font-size: small;
+    font-weight: bold;
+}
+
+#footer p{
+    margin-left: -20px;
+    margin-top: 20px;
+    font-weight: normal;
+}
 @media only screen and (min-width:1000px){
     #navi-bar{      
         height: 15vh;
@@ -163,15 +188,19 @@ form button{
         margin-left: 50px;
         font-size:larger;
     }
-    #img{
+    .image{
         margin-top: 120px;
         width: 60vw;
+    }
+    form h2{
+        margin-top: 35px;
+        font-size:xx-large;
     }
     #content form{
         background-color: #fffefe;
         width: 75vw;
         height: auto;
         box-shadow: 0 8px 16px black;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
 }
